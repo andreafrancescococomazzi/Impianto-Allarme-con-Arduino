@@ -36,7 +36,7 @@ Prima di aprire gli sketch nell’IDE Arduino, copia o installa la libreria nell
 
 ### Schema elettrico
 
-![Schema elettrico](docs/schema _elettrico.png)
+![Schema elettrico](docs/schema_elettrico.png)
 
 ### Posizionamento dei componenti
 
