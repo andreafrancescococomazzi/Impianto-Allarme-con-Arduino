@@ -44,4 +44,4 @@ Prima di aprire gli sketch nell’IDE Arduino, copia o installa la libreria nell
 
 ### Prototipo realizzato
 
-![Foto del progetto](docs/foto_progetto.jpg)
+![Foto del progetto](docs/foto_progetto.png)
