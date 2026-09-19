@@ -25,3 +25,9 @@ Progetto di un sistema di allarme basato su Arduino, progettato per rilevare mov
 ## Logica di funzionamento
 
 L'impianto può trovarsi negli stati di allarme inserito, allarme in corso e allarme disinserito. Quando il sensore PIR rileva un movimento con l'impianto inserito, vengono attivati buzzer, LED giallo e messaggio di allarme sul display. Una chiave RFID autorizzata permette di disattivare o riattivare il sistema.
+
+## Libreria necessaria
+
+La cartella `Libreria_rfid` è inclusa per rendere il progetto completo e permettere l’esecuzione degli sketch senza dover cercare dipendenze esterne.
+
+Prima di aprire gli sketch nell’IDE Arduino, copia o installa la libreria nella cartella delle librerie di Arduino.
