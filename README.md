@@ -40,7 +40,7 @@ Prima di aprire gli sketch nell’IDE Arduino, copia o installa la libreria nell
 
 ### Posizionamento dei componenti
 
-![Schema di posizionamento](docs/rappresentazione_grafica.png)
+![Rappresentazione grafica](docs/rappresentazione_grafica.png)
 
 ### Prototipo realizzato
 
