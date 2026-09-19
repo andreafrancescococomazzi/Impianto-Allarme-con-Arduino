@@ -1,4 +1,27 @@
-# Impianto-Allarme-con-Arduino
-Arduino è una scheda open-source programmabile con microcontrollore che costituisce la parte hardware e un software denominato IDE Arduino, dove IDE sta per Integrated Development Environment.
+# Impianto di allarme con Arduino
 
-Il primo passo fondamentale per il corretto funzionamento dell'impianto è la memorizzazione della chiave master. Per configurare tale chiave si deve caricare lo sketch 'Chiave Master' all'interno della scheda Arduino. Come seconda operazione bisogna far leggere la chiave master all'RFID per poter configurare la chiave slave. Una volta eseguita la configurazione della chiave slave, si passa al funzionamento dell'impianto. Al primo accesso, il display comunica all'utente il nome del creator e dopo 5 secondi comunica 'ANTIFURTO INSERITO' e si accende il led rosso. Se il PIR rileva un movimento, la scheda Arduino fa suonare il buzzer e contemporaneamente accende il led giallo e il display comunica 'ALLARME IN CORSO', fino a quando il PIR smette di rilevare il movimento. Il PIR rileva il movimento solo quando è attivo lo stato 'ANTIFURTO ATTIVO'. Quando l'impianto è nello stato di 'ALLARME IN CORSO', l'utente può disattivare l'allarme eseguendo la lettura della chiave slave da parte del modulo RFID. A questo punto il led rosso si spegne e si accende quello verde. Per disattivare l'allarme si fa leggere all'RFID la chiave slave e dopo un istante l'allarme smette di suonare, di conseguenza si accende il led verde e contemporaneamente il display comunica all'utente 'antifurto disinserito'. A questo punto il PIR non rileva alcun movimento. Per riattivare l'allarme si deve far leggere nuovamente la chiave slave all'RFID e dopo 8 secondi viene riattivata l'allarme, questo avviene perché l'impianto è stato progettato per essere istallato all'interno dei locali, quindi l'utente ha 8 secondi per liberare i locali. Una volta inserita l'allarme si riaccende il led rosso e il display comunica all'utente 'ANTIFURTO INSERITO' e il led verde si spegne. Se l'utente ritiene opportuno resettare le chiavi slave può pigiare il pulsante del reset. Questa funzione si attiva cliccando il pulsante posizionato sulla breadboard e il display comunica all'utente Reset chiavi…'. Successivamente si esegue la lettura della chiave slave e il display comunica 'chiave rilevata' e dopo un istante comunica 'Slave 1 salvata!'; mediante tale operazione l'utente verifica la corretta esecuzione del salvataggio della chiave slave. Dopo aver effettuato il reset si nota che il modulo RFID riconoscerà solamente l'ultima chiave memorizzata. Per ritornare allo stato di allarme basta far rileggere la chiave slave al modulo RFID.
+Progetto di un sistema di allarme basato su Arduino, progettato per rilevare movimenti e gestire l'attivazione/disattivazione dell'impianto tramite RFID.
+
+## Funzionalità principali
+
+- Rilevamento del movimento tramite sensore PIR.
+- Attivazione dell'allarme con buzzer, LED di stato e display LCD.
+- Autenticazione tramite modulo RFID e chiavi autorizzate.
+- Ritardo di uscita di 8 secondi prima dell'attivazione dell'allarme.
+- Reset e nuova configurazione delle chiavi RFID tramite pulsante.
+- Visualizzazione dello stato del sistema sul display LCD.
+
+## Componenti utilizzati
+
+- Arduino
+- Sensore PIR
+- Modulo RFID
+- Display LCD
+- Buzzer
+- LED rosso, giallo e verde
+- Pulsante di reset
+- Breadboard e cablaggi
+
+## Logica di funzionamento
+
+L'impianto può trovarsi negli stati di allarme inserito, allarme in corso e allarme disinserito. Quando il sensore PIR rileva un movimento con l'impianto inserito, vengono attivati buzzer, LED giallo e messaggio di allarme sul display. Una chiave RFID autorizzata permette di disattivare o riattivare il sistema.
