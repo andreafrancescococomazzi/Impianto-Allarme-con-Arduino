@@ -31,3 +31,17 @@ L'impianto può trovarsi negli stati di allarme inserito, allarme in corso e all
 La cartella `Libreria_rfid` è inclusa per rendere il progetto completo e permettere l’esecuzione degli sketch senza dover cercare dipendenze esterne.
 
 Prima di aprire gli sketch nell’IDE Arduino, copia o installa la libreria nella cartella delle librerie di Arduino.
+
+## Documentazione visiva
+
+### Schema elettrico
+
+![Schema elettrico](docs/schema_elettrico.png)
+
+### Posizionamento dei componenti
+
+![Schema di posizionamento](docs/rappresentazione_grafica.png)
+
+### Prototipo realizzato
+
+![Foto del progetto](docs/foto_progetto.jpg)
